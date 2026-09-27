@@ -6,6 +6,10 @@ one-click Google Calendar links and an `.ics` export.
 Unofficial community project, not affiliated with SkyCastle. Needs a SkyCastle
 member login.
 
+[![Watch the 1-minute demo](docs/demo-poster.jpg)](https://github.com/przemekzur/skycastle-bulletin/releases/download/v0.1.0/skycastle-bulletin-demo.mp4)
+
+▶ [Watch the 1-minute demo](https://github.com/przemekzur/skycastle-bulletin/releases/download/v0.1.0/skycastle-bulletin-demo.mp4) (narrated, with captions)
+
 ## Install
 
 1. Download the latest `skycastle-bulletin-x.y.z.zip` from
