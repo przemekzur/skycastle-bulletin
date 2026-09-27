@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SkyCastle Bulletin",
+  "version": "0.1.0",
+  "description": "Notifications and Google Calendar links for SkyCastle community sessions.",
+  "permissions": ["alarms", "notifications", "storage"],
+  "host_permissions": ["https://skycastle.ai/*"],
+  "background": { "service_worker": "src/background.js", "type": "module" },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "SkyCastle Bulletin",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

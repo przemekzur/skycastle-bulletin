@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SkyCastle Bulletin</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="dia">◆</span> SKYCASTLE BULLETIN</div>
+    <div class="head-actions">
+      <button id="refresh" class="icon" title="Refresh now">↻</button>
+      <button id="toggle-settings" class="icon" title="Settings">⚙</button>
+    </div>
+  </header>
+
+  <div id="status" class="status"></div>
+
+  <section id="settings" hidden>
+    <label class="row">
+      <span>Remind me</span>
+      <select id="leadMinutes">
+        <option value="0">off</option>
+        <option value="5">5 min before</option>
+        <option value="10">10 min before</option>
+        <option value="15">15 min before</option>
+        <option value="30">30 min before</option>
+        <option value="60">1 hour before</option>
+      </select>
+    </label>
+    <label class="row"><span>Also when it starts</span><input type="checkbox" id="notifyAtStart"></label>
+    <label class="row"><span>Show daily Onboarding &amp; Hangout</span><input type="checkbox" id="includeRoutine"></label>
+    <label class="col">
+      <span>Only notify for (comma-separated, empty = all)</span>
+      <input type="text" id="keywords" placeholder="richard, agentic, growth hack" spellcheck="false">
+    </label>
+    <div class="row buttons">
+      <button id="test">Test notification</button>
+      <button id="export">Export .ics</button>
+    </div>
+    <p class="hint">Export .ics → Google Calendar → Settings → Import. Or use <b>+ Cal</b> per session.</p>
+  </section>
+
+  <main id="list"></main>
+
+  <footer>
+    <a href="https://skycastle.ai/bulletin" target="_blank">Open bulletin ↗</a>
+    <span id="tz"></span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
